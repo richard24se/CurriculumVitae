@@ -1,0 +1,21 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "description": "Curriculum Vitae of Aldo Richard Santillán Echevarría",
+  "main": "resume.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "resume export resume.pdf",
+    "serve": "resume serve"
+  },
+  "keywords": [
+    "resume",
+    "json-resume"
+  ],
+  "author": "Aldo Richard Santillán Echevarría <tu-email@ejemplo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@jsonresume/jsonresume-theme-consultant-polished": "file:jsonresume-theme-consultant-polished",
+    "resume-cli": "^3.0.8"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jsonresume-theme-richard",
+  "version": "1.0.0",
+  "description": "Modern bilingual JSON Resume theme with ES/EN support via RESUME_LANG env var",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "modern",
+    "bilingual",
+    "spanish",
+    "english"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rimraf dist node_modules",
+    "rebuild": "npm run clean && npm install && npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.19"
+  }
+}

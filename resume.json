@@ -1,0 +1,194 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
+    "basics": {
+        "name": "Aldo Richard Santillán Echevarría",
+        "label": "Python Software Engineer",
+        "image": "",
+        "email": "tu-email@ejemplo.com",
+        "phone": "",
+        "url": "",
+        "summary": "Passionate and innovative IT Pro with more than 10 years of experience in the world of information technology. Focused in the last 9 years on DevOps, High Performance Agile Development and Machine Learning topics. Persevering and Self-taught, with motivation to generate value in companies.",
+        "location": {
+            "city": "Lima",
+            "countryCode": "PE",
+            "region": "Lima"
+        },
+        "profiles": []
+    },
+    "work": [
+        {
+            "name": "Globant (Client: Yastas)",
+            "position": "Python Developer",
+            "startDate": "2023-05-01",
+            "endDate": "2024-02-01",
+            "summary": "Operations - Yastas",
+            "highlights": [
+                "Carry out maintenance and optimization of current systems and develop new Software solutions.",
+                "Resolve tickets related to core applications.",
+                "Improve the performance of the applications.",
+                "Improve the coverage of the tests.",
+                "Resolve issues and bugs and update source code and DB to support microservices.",
+                "Create DAGs for Workflow on Airflow.",
+                "Coordinate with the client to optimally define the software development.",
+                "Support the team with Python issues and challenges and propose best practices.",
+                "Stack: Python, Flask, FastAPI, GCP, Cloud Run, Cloud Functions, SQLAlchemy, Apache Beam."
+            ]
+        },
+        {
+            "name": "Globant (Client: C.H. Robinson)",
+            "position": "Python Developer",
+            "startDate": "2023-01-01",
+            "endDate": "2023-05-01",
+            "summary": "Contractual - C.H. Robinson",
+            "highlights": [
+                "Carry out maintenance and optimization of current systems and develop new Software solutions.",
+                "Resolve tickets related to the CPTS application and Microfocals service.",
+                "Execute test cases and improve the base code.",
+                "Review the teammate's PRs to guarantee the source code quality.",
+                "Stack: Python, Flask, Azure, Datadog, FastAPI, SQLAlchemy, Azure DevOps."
+            ]
+        },
+        {
+            "name": "Globant (Client: C.H. Robinson)",
+            "position": "Python Developer",
+            "startDate": "2022-11-01",
+            "endDate": "2023-01-01",
+            "summary": "ML Platform - C.H. Robinson",
+            "highlights": [
+                "Design ML Platform with the team.",
+                "Support in ML integrations with Python.",
+                "Create template for DAG's in Airflow.",
+                "Support in Kubernetes issues and Azure ML.",
+                "Stack: Python, Airflow, Beam, Kubernetes, Azure ML, SnowFlake, Azure DevOps."
+            ]
+        },
+        {
+            "name": "Globant (Client: SoFi)",
+            "position": "Python Developer",
+            "startDate": "2022-07-01",
+            "endDate": "2022-10-01",
+            "summary": "Core Process - SoFi",
+            "highlights": [
+                "Carry out maintenance and optimization of current systems and develop new Software solutions.",
+                "Resolve tickets related to service application or binaries.",
+                "Improve the performance of the ETL process.",
+                "Create test case for each HU has been assigned.",
+                "Stack: Python2, Python3, Oracle, GitHub."
+            ]
+        },
+        {
+            "name": "Globant (Client: Newsela)",
+            "position": "Python Developer",
+            "startDate": "2022-01-01",
+            "endDate": "2022-06-01",
+            "summary": "Portal - Newsela",
+            "highlights": [
+                "Carry out maintenance and optimization of current systems and develop new Software solutions.",
+                "Resolve tickets related to the monolithic application.",
+                "Increase the coverage of the actual tests to over the 90%.",
+                "Stack: Python, Django, GitLab, GitLab DevOps, Docker."
+            ]
+        },
+        {
+            "name": "El Pedregal",
+            "position": "Solutions Architect",
+            "startDate": "2019-05-01",
+            "endDate": "2021-12-01",
+            "highlights": [
+                "Carry out maintenance and optimization of current systems, and develop new Software solutions.",
+                "Design of APIs and Frontends architecture.",
+                "Migrate monolithic systems to microservices with Flask and FastAPI.",
+                "Develop, define and contribute to software architecture standards and DevOps.",
+                "Migrate database between different engines using SQLAlchemy.",
+                "Integrate information from systems through a distributed task manager."
+            ]
+        },
+        {
+            "name": "Canvia",
+            "position": "Python Developer",
+            "startDate": "2019-02-01",
+            "endDate": "2019-05-01",
+            "highlights": [
+                "Development of APIs in Python for integration with existing systems.",
+                "Automation and improvement of BU Cloud processes with Python and Django.",
+                "Develop automations and orchestration with Ansible, Ansible Tower, and AWX.",
+                "Deploy Pipelines with Jenkins and Application Containerization with Docker."
+            ]
+        },
+        {
+            "name": "San Miguel Industrias PET",
+            "position": "IT Infrastructure and Services Analyst",
+            "startDate": "2015-05-01",
+            "endDate": "2019-02-01",
+            "highlights": [
+                "Manage the information and communication technology infrastructure of the corporation.",
+                "Administration of Microsoft Windows Server and Linux Centos/Suse servers.",
+                "Scripting / Automation Development with Ansible, Python, Perl, C++, PowerShell, Batch and Bash.",
+                "Development of applications with the Django Framework.",
+                "Developing SPA applications using Jquery and Vue.js."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Peruana de Ciencias Aplicadas",
+            "area": "Systems Engineering",
+            "studyType": "BS",
+            "startDate": "2014-07-01",
+            "endDate": "2018-12-01",
+            "location": "Lima, Perú"
+        },
+        {
+            "institution": "Instituto Privado Tecnológico Cibertec",
+            "area": "Networking",
+            "studyType": "Technical",
+            "startDate": "2010-08-01",
+            "endDate": "2013-12-01",
+            "location": "Lima, Perú"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "level": "Advanced",
+            "keywords": [
+                "Python",
+                "Go",
+                "Javascript",
+                "SQL"
+            ]
+        },
+        {
+            "name": "Frontend",
+            "level": "Advanced",
+            "keywords": [
+                "React",
+                "Vue.js"
+            ]
+        },
+        {
+            "name": "DevOps & Cloud",
+            "level": "Advanced",
+            "keywords": [
+                "DevOps",
+                "Microservices",
+                "Kubernetes",
+                "Docker",
+                "Ansible",
+                "GCP",
+                "Azure",
+                "AWS"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native Speaker - C2"
+        },
+        {
+            "language": "English",
+            "fluency": "Intermediate - B1+"
+        }
+    ]
+}

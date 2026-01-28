@@ -1,0 +1,26 @@
+{
+  "name": "jsonresume-theme-government-standard",
+  "version": "0.1.0",
+  "description": "Government/compliance roles - conservative, by-the-book formatting",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "government",
+    "formal",
+    "compliance",
+    "ats"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.19"
+  }
+}

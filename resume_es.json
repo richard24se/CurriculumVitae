@@ -1,0 +1,296 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
+    "meta": {
+        "language": "es"
+    },
+    "basics": {
+        "name": "Aldo Richard Santillán Echevarría",
+        "label": "Ingeniero de Software Python",
+        "image": "https://media.licdn.com/dms/image/v2/D4E03AQGiGqQl6OlrAA/profile-displayphoto-crop_800_800/B4EZmwe8okKgAI-/0/1759602527271?e=1771459200&v=beta&t=dU3Bkc7-WMvyi5_YTKJzXhLxNoonNrAZYmAn3CRlhz0",
+        "email": "richard.24.se@gmail.com",
+        "phone": "+51 948881161",
+        "url": "https://fausto.app",
+        "summary": "Profesional de TI con +10 años de experiencia especializado en desarrollo de microservicios con Python, arquitectura de soluciones y prácticas DevOps. Experiencia liderando migraciones de sistemas monolíticos a microservicios, optimización de pipelines ETL, implementación de plataformas ML y automatización de infraestructura. Enfocado en entregar soluciones escalables que mejoran el rendimiento y reducen costos operativos.",
+        "location": {
+            "city": "Lima",
+            "countryCode": "PE",
+            "region": "Lima"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "richardsantillan",
+                "url": "https://linkedin.com/in/richardsantillan"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Globant (Cliente: Disney Parks)",
+            "position": "Software Designer",
+            "location": "Remoto",
+            "startDate": "2024-03-01",
+            "summary": "Desarrollo e implementación de soluciones de IA/LLM para la organización. Arquitectura y desarrollo de plataforma Jedai para centralizar acceso a modelos LLM. Integración de múltiples proveedores de IA incluyendo Azure OpenAI, Vertex AI y modelos open source. Implementación de agentes AI con LangGraph y sistemas RAG. Verificación de capacidades de modelos. Desarrollo de SDK con completions. Optimización de rendimiento con arquitectura full async. Liderazgo técnico en iniciativas de IA Generativa. Diseño e implementación de arquitectura de plataformas LLM. Evaluación y benchmarking de modelos de lenguaje. Desarrollo de APIs y SDKs para consumo interno. Optimización de rendimiento y escalabilidad de servicios de IA.",
+            "highlights": [
+                "Creé plataforma Jedai que democratizó el acceso a LLMs para +15 equipos de la organización",
+                "Escalé arquitectura a 10K+ requests/segundo con latencia p99 < 200ms usando una arquitectura full async",
+                "Reduje costos de LLM en 40% implementando caching inteligente y routing de modelos",
+                "Implementé RAG que mejoró precisión de respuestas del 65% al 92% en documentación interna",
+                "Desarrollé agentes autónomos con LangGraph que automatizaron 3 flujos de negocio críticos",
+                "Habilité adopción de IA en 15+ equipos reduciendo su time-to-production de 3 meses a 2 semanas"
+            ]
+        },
+        {
+            "name": "Globant (Cliente: Yastas)",
+            "position": "Software Engineer",
+            "location": "Remoto",
+            "startDate": "2023-05-01",
+            "endDate": "2024-02-01",
+            "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicaciones core. Mejora del rendimiento de aplicaciones y cobertura de tests. Actualización de código fuente y BD para microservicios. Creación de DAGs en Airflow. Coordinación con cliente para desarrollo de software. Soporte al equipo con problemas Python y propuesta de mejores prácticas. Revisión de PRs.",
+            "highlights": [
+                "Reduje el tiempo de respuesta de APIs críticas de 500ms a 120ms mediante optimización de queries",
+                "Aumenté la cobertura de tests del 45% al 85% en el módulo principal",
+                "Implementé 15 DAGs en Airflow automatizando procesos que antes eran manuales",
+                "Migré 8 servicios legacy a arquitectura de microservicios con FastAPI",
+                "Reduje el tiempo de despliegue de 2 horas a 15 minutos con CI/CD optimizado",
+                "Propuse estándares de código Python adoptados por todo el equipo de 12 desarrolladores"
+            ]
+        },
+        {
+            "name": "Globant (Cliente: C.H. Robinson)",
+            "position": "Software Engineer",
+            "location": "Remoto",
+            "startDate": "2023-01-01",
+            "endDate": "2023-05-01",
+            "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicación CPTS y servicio Microfocals. Ejecución de casos de prueba. Mejora del código base. Revisión de PRs del equipo para garantizar calidad del código fuente.",
+            "highlights": [
+                "Mejoré el rendimiento del servicio Microfocals reduciendo latencia en 60%",
+                "Identifiqué y corregí 15 vulnerabilidades de seguridad en el código base",
+                "Reduje la deuda técnica del proyecto en un 30% mediante refactoring"
+            ]
+        },
+        {
+            "name": "Globant (Cliente: C.H. Robinson)",
+            "position": "Software Engineer",
+            "location": "Remoto",
+            "startDate": "2022-11-01",
+            "endDate": "2023-01-01",
+            "summary": "Diseño de Plataforma ML con el equipo. Soporte en integraciones ML con Python. Creación de templates para DAGs en Airflow. Soporte en problemas de Kubernetes y Azure ML. Resolución de tickets de aplicación CPTS y servicio Microfocals. Revisión de PRs.",
+            "highlights": [
+                "Resolví problemas críticos de Kubernetes reduciendo downtime en 80%",
+                "Implementé pipelines de datos con Apache Beam procesando 500GB diarios",
+                "Documenté arquitectura ML adoptada como estándar para nuevos proyectos"
+            ]
+        },
+        {
+            "name": "Globant (Cliente: SoFi)",
+            "position": "Software Engineer",
+            "location": "Remoto",
+            "startDate": "2022-07-01",
+            "endDate": "2022-10-01",
+            "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicaciones de servicio y binarios. Mejora del rendimiento del proceso ETL. Creación de casos de prueba para cada HU asignada. Revisión de PRs.",
+            "highlights": [
+                "Optimicé los procesos core para que sean 30% más rápidos usando threading",
+                "Migré módulos core de Python2 a Python3",
+                "Reduje consumo de memoria de procesos batch en 50%"
+            ]
+        },
+        {
+            "name": "Globant (Cliente: Newsela)",
+            "position": "Software Engineer",
+            "location": "Remoto",
+            "startDate": "2022-01-01",
+            "endDate": "2022-06-01",
+            "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicación monolítica. Creación de casos de prueba para cada HU. Aumento de cobertura de tests a más del 90%. Revisión de PRs.",
+            "highlights": [
+                "Aumenté cobertura de tests del 55% al 92% en aplicación Django",
+                "Resolví 60+ tickets de bugs en aplicación monolítica de alto tráfico",
+                "Implementé CI/CD con GitLab reduciendo tiempo de deploy de 1 hora a 10 min",
+                "Optimicé queries ORM Django mejorando respuesta de páginas en 70%",
+                "Containerizé aplicación con Docker facilitando despliegues en staging",
+                "Documenté 20+ endpoints API para uso del equipo frontend"
+            ]
+        },
+        {
+            "name": "El Pedregal",
+            "position": "Arquitecto de Soluciones",
+            "startDate": "2019-05-01",
+            "endDate": "2021-12-01",
+            "summary": "Mantenimiento y optimización de sistemas. Diseño de arquitectura de APIs y Frontends. Definición de tecnologías, patrones de diseño y frameworks. Migración de sistemas monolíticos a microservicios con Flask y FastAPI. Revisiones de código. Desarrollo y definición de estándares de arquitectura y DevOps. Gestión de framework DevOps y CI/CD. Investigación de nuevas soluciones. Documentación de designs. Propuesta de mejoras. Migración de BD entre motores con SQLAlchemy. Integración de sistemas mediante gestor de tareas distribuido.",
+            "highlights": [
+                "Migré 12 sistemas monolíticos a microservicios reduciendo tiempo de deploy en 80%",
+                "Diseñé arquitectura API REST que soporta 10K+ requests/minuto",
+                "Implementé framework DevOps adoptado por 5 equipos de desarrollo",
+                "Migré 8 bases de datos entre PostgreSQL, MySQL y MongoDB sin downtime",
+                "Creé sistema de integración con Celery procesando 50K+ tareas diarias",
+                "Reduje costos de infraestructura cloud en 40% mediante optimización"
+            ]
+        },
+        {
+            "name": "Canvia",
+            "position": "Desarrollador Python",
+            "startDate": "2019-02-01",
+            "endDate": "2019-05-01",
+            "summary": "Desarrollo de APIs Python para integración con sistemas existentes. Automatización de procesos BU Cloud con Python y Django bajo continuous delivery. Automatización y orquestación con Ansible, Ansible Tower y AWX. Despliegue de pipelines con Jenkins y containerización con Docker. Promoción del framework DevOps. Liderazgo del proyecto Atlas Inventory Cloud para Visanet. Desarrollo de componentes y librerías en Python, Perl, Bash y PowerShell. Desarrollo frontend con ReactJS. Integración de clouds AWS, Azure y GCP.",
+            "highlights": [
+                "Lideré proyecto Atlas Inventory Cloud para Visanet entregado en tiempo récord",
+                "Desarrollé 15 APIs REST integrando sistemas legacy con plataformas modernas",
+                "Automaticé 30+ procesos de BU Cloud reduciendo tiempo manual en 70%",
+                "Implementé 20 playbooks Ansible para orquestación de infraestructura",
+                "Creé pipelines Jenkins para 8 aplicaciones con despliegue automatizado",
+                "Integré servicios de AWS, Azure y GCP en arquitectura multi-cloud"
+            ]
+        },
+        {
+            "name": "San Miguel Industrias PET",
+            "position": "Analista de Infraestructura y Servicios TI",
+            "startDate": "2015-05-01",
+            "endDate": "2019-02-01",
+            "summary": "Gestión de infraestructura TIC de la corporación. Liderazgo de proyectos de innovación TI. Administración de servidores Windows Server 2008/2012 y Linux CentOS/SUSE. Administración de servidores AIX (SAP, BW, BO, BI). Administración Office365. Control de plataformas de seguridad TI (Fortinet, Kaspersky, Watchguard). Monitoreo con Icinga y Grafana. Administración System Center. Gestión de redes Cisco y Motorola. Backups con Tivoli IBM. Virtualización Hyper-V y VMware. Administración BD SQL Server, Oracle y PostgreSQL. Desarrollo de reportes con PowerBI. Scripting con Ansible, Python, Perl, C++, PowerShell, Batch y Bash. Desarrollo Django y SPAs con jQuery y Vue.js. Responsable de DataCenter. Investigación de mejoras. Viajes internacionales para despliegues TI.",
+            "highlights": [
+                "Gestioné infraestructura TI de corporación multinacional con presencia en 5 países",
+                "Automaticé 50+ tareas de administración con scripts Python y Ansible",
+                "Implementé monitoreo con Icinga y Grafana alcanzando 99.9% de uptime",
+                "Desarrollé 10 aplicaciones web con Django integrando SAP y sistemas legacy",
+                "Lideré despliegues de infraestructura TI en Colombia, Ecuador y Chile",
+                "Migré 200+ usuarios a Office365 sin interrupción de servicio"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Peruana de Ciencias Aplicadas",
+            "area": "Ingeniería de Sistemas",
+            "studyType": "Licenciatura",
+            "startDate": "2014-07-01",
+            "endDate": "2018-12-01",
+            "location": "Lima, Perú"
+        },
+        {
+            "institution": "Instituto Privado Tecnológico Cibertec",
+            "area": "Redes y Comunicaciones",
+            "studyType": "Técnico",
+            "startDate": "2010-08-01",
+            "endDate": "2013-12-01",
+            "location": "Lima, Perú"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Lenguajes de Programación",
+            "level": "Avanzado",
+            "keywords": [
+                "Python (Avanzado)",
+                "Go (Intermedio)",
+                "Javascript (Avanzado)",
+                "SQL (Intermedio)"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Avanzado",
+            "keywords": [
+                "FastAPI",
+                "Flask",
+                "Django",
+                "React",
+                "Vue.js"
+            ]
+        },
+        {
+            "name": "DevOps y Cloud",
+            "level": "Avanzado",
+            "keywords": [
+                "Docker (Avanzado)",
+                "Kubernetes (Intermedio)",
+                "Ansible (Intermedio)",
+                "GCP (Intermedio)",
+                "Azure",
+                "AWS",
+                "Airflow"
+            ]
+        },
+        {
+            "name": "Arquitectura",
+            "level": "Avanzado",
+            "keywords": [
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB",
+                "Redis",
+                "SnowFlake"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "PyFlow",
+            "description": "Framework de programación visual para automatizaciones en Python con interfaz de arrastrar y soltar",
+            "url": "https://github.com/richard24se/pyflow",
+            "keywords": [
+                "Python",
+                "FastAPI",
+                "React"
+            ]
+        },
+        {
+            "name": "CloudMigrator",
+            "description": "Herramienta para migración fluida de bases de datos entre proveedores de nube",
+            "url": "https://github.com/richard24se/cloudmigrator",
+            "keywords": [
+                "Python",
+                "SQLAlchemy",
+                "GCP",
+                "AWS"
+            ]
+        },
+        {
+            "name": "DevOps Dashboard",
+            "description": "Panel de monitoreo en tiempo real para pipelines CI/CD y despliegues",
+            "url": "https://github.com/richard24se/devops-dashboard",
+            "keywords": [
+                "Vue.js",
+                "Python",
+                "Docker"
+            ]
+        },
+        {
+            "name": "API Gateway Pro",
+            "description": "Gateway de API ligero con limitación de velocidad y autenticación",
+            "keywords": [
+                "Go",
+                "Redis",
+                "Docker"
+            ]
+        },
+        {
+            "name": "ML Pipeline",
+            "description": "Pipeline de machine learning de extremo a extremo con entrenamiento y despliegue automatizado",
+            "url": "https://github.com/richard24se/ml-pipeline",
+            "keywords": [
+                "Python",
+                "Airflow",
+                "Kubernetes"
+            ]
+        },
+        {
+            "name": "Log Analyzer",
+            "description": "Sistema distribuido de análisis de logs con alertas en tiempo real",
+            "keywords": [
+                "Python",
+                "Elasticsearch",
+                "Grafana"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Español",
+            "fluency": "Nativo - C2"
+        },
+        {
+            "language": "Inglés",
+            "fluency": "Intermedio - B1+"
+        }
+    ]
+}
