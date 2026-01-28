@@ -16,6 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "@jsonresume/jsonresume-theme-consultant-polished": "file:jsonresume-theme-consultant-polished",
+    "jsonresume-theme-engineering-leader": "^1.0.34",
+    "jsonresume-theme-government-standard": "file:jsonresume-theme-goverment",
+    "jsonresume-theme-richard": "file:jsonresume-theme-richard",
     "resume-cli": "^3.0.8"
   }
 }

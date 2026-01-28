@@ -76,6 +76,19 @@ const SocialLink = styled.a`
   }
 `;
 
+const ContactText = styled.span`
+  font-size: 12px;
+  color: #4a5568;
+  
+  a {
+    color: #4a5568;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
 const ProfileImage = styled.img`
   width: 100px;
   height: 100px;
@@ -85,6 +98,11 @@ const ProfileImage = styled.img`
 
 const Section = styled.section`
   margin-bottom: 28px;
+  ${props => props.$pageBreak && 'page-break-before: always;'}
+  
+  @media print {
+    padding-top: ${props => props.$pageBreak ? '0' : '16px'};
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -106,6 +124,8 @@ const AboutText = styled.p`
 // Work Experience styles
 const WorkItem = styled.div`
   margin-bottom: 24px;
+  overflow: hidden;
+  ${props => props.$pageBreak && 'page-break-before: always;'}
   
   &:last-child {
     margin-bottom: 0;
@@ -143,7 +163,8 @@ const DateRange = styled.span`
 
 const Position = styled.div`
   font-size: 13px;
-  color: #2d3748;
+  /* color: #2d3748; */
+  color: #0e0e0fff;
   margin-bottom: 6px;
 `;
 
@@ -152,6 +173,19 @@ const Description = styled.p`
   color: #4a5568;
   line-height: 1.6;
   margin: 0 0 6px 0;
+`;
+
+const HighlightList = styled.ul`
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+  list-style-type: disc;
+`;
+
+const HighlightItem = styled.li`
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.5;
+  margin-bottom: 2px;
 `;
 
 const TechTags = styled.div`
@@ -198,11 +232,11 @@ const SkillsContainer = styled.div`
 
 const SkillBadge = styled.span`
   display: inline-block;
-  padding: 4px 12px;
+  padding: 2px 8px;
   background: #1a1a1a;
   color: #ffffff;
   font-size: 12px;
-  border-radius: 9999px;
+  border-radius: 4px;
 `;
 
 // Projects styles
@@ -224,6 +258,8 @@ const ProjectCard = styled.div`
   padding: 12px;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
+  overflow: hidden;
+  ${props => props.$pageBreak && 'page-break-before: always;'}
 `;
 
 const ProjectName = styled.div`
@@ -301,7 +337,11 @@ function Resume({ resume }) {
         education = [],
         skills = [],
         projects = [],
+        languages = [],
+        meta = {},
     } = resume;
+
+    const textOnlyContact = meta.textOnlyContact || false;
 
     const allKeywords = skills.flatMap(s => s.keywords || []);
 
@@ -320,32 +360,45 @@ function Resume({ resume }) {
                         </Location>
                     )}
                     <SocialLinks>
-                        {basics.email && (
-                            <SocialLink href={`mailto:${basics.email}`} title="Email">
-                                ✉
-                            </SocialLink>
+                        {textOnlyContact ? (
+                            <>
+                                {basics.email && <ContactText><a href={`mailto:${basics.email}`}>{basics.email}</a></ContactText>}
+                                {basics.phone && <ContactText> | <a href={`tel:${basics.phone}`}>{basics.phone}</a></ContactText>}
+                                {basics.url && <ContactText> | <a href={basics.url} target="_blank" rel="noopener noreferrer">{basics.url.replace(/^https?:\/\//, '')}</a></ContactText>}
+                                {basics.profiles?.map((profile, i) => (
+                                    <ContactText key={i}> | <a href={profile.url} target="_blank" rel="noopener noreferrer">{profile.network}</a></ContactText>
+                                ))}
+                            </>
+                        ) : (
+                            <>
+                                {basics.email && (
+                                    <SocialLink href={`mailto:${basics.email}`} title="Email">
+                                        ✉
+                                    </SocialLink>
+                                )}
+                                {basics.phone && (
+                                    <SocialLink href={`tel:${basics.phone}`} title="Phone">
+                                        ☎
+                                    </SocialLink>
+                                )}
+                                {basics.url && (
+                                    <SocialLink href={basics.url} target="_blank" rel="noopener noreferrer" title="Website">
+                                        🌐
+                                    </SocialLink>
+                                )}
+                                {basics.profiles?.map((profile, i) => (
+                                    <SocialLink
+                                        key={i}
+                                        href={profile.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        title={profile.network}
+                                    >
+                                        {getIconForNetwork(profile.network)}
+                                    </SocialLink>
+                                ))}
+                            </>
                         )}
-                        {basics.phone && (
-                            <SocialLink href={`tel:${basics.phone}`} title="Phone">
-                                ☎
-                            </SocialLink>
-                        )}
-                        {basics.url && (
-                            <SocialLink href={basics.url} target="_blank" rel="noopener noreferrer" title="Website">
-                                🌐
-                            </SocialLink>
-                        )}
-                        {basics.profiles?.map((profile, i) => (
-                            <SocialLink
-                                key={i}
-                                href={profile.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title={profile.network}
-                            >
-                                {getIconForNetwork(profile.network)}
-                            </SocialLink>
-                        ))}
                     </SocialLinks>
                 </HeaderLeft>
                 {basics.image && (
@@ -366,7 +419,7 @@ function Resume({ resume }) {
                 <Section>
                     <SectionTitle>{t('workExperience')}</SectionTitle>
                     {work.map((job, i) => (
-                        <WorkItem key={i}>
+                        <WorkItem key={i} $pageBreak={job.pageBreakBefore}>
                             <WorkHeader>
                                 <WorkTitle>
                                     <CompanyName>{job.name}</CompanyName>
@@ -376,10 +429,12 @@ function Resume({ resume }) {
                             </WorkHeader>
                             <Position>{job.position}</Position>
                             {job.summary && <Description>{job.summary}</Description>}
-                            {job.highlights?.length > 0 && (
-                                <Description>
-                                    {job.highlights.join('. ')}.
-                                </Description>
+                            {job.highlights && job.highlights.length > 0 && (
+                                <HighlightList>
+                                    {job.highlights.map((highlight, j) => (
+                                        <HighlightItem key={j}>{highlight}</HighlightItem>
+                                    ))}
+                                </HighlightList>
                             )}
                         </WorkItem>
                     ))}
@@ -423,7 +478,7 @@ function Resume({ resume }) {
                     <SectionTitle>{t('projects')}</SectionTitle>
                     <ProjectsGrid>
                         {projects.map((project, i) => (
-                            <ProjectCard key={i}>
+                            <ProjectCard key={i} $pageBreak={project.pageBreakBefore}>
                                 <ProjectName>
                                     {project.url ? (
                                         <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -446,6 +501,20 @@ function Resume({ resume }) {
                             </ProjectCard>
                         ))}
                     </ProjectsGrid>
+                </Section>
+            )}
+
+            {/* Languages */}
+            {languages.length > 0 && (
+                <Section>
+                    <SectionTitle>{t('languages')}</SectionTitle>
+                    <SkillsContainer>
+                        {languages.map((lang, i) => (
+                            <SkillBadge key={i}>
+                                {lang.language} {lang.fluency && `(${lang.fluency})`}
+                            </SkillBadge>
+                        ))}
+                    </SkillsContainer>
                 </Section>
             )}
         </Container>

@@ -2,9 +2,12 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
 import Resume from './Resume.jsx';
-import { getLanguage } from './i18n.js';
+import { getLanguage, setLanguageFromMeta } from './i18n.js';
 
 export function render(resume) {
+  // Detect language from resume.meta.language (e.g., {"meta": {"language": "es"}})
+  setLanguageFromMeta(resume);
+
   const sheet = new ServerStyleSheet();
   const lang = getLanguage();
 

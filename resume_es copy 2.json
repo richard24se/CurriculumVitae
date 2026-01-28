@@ -1,17 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
     "meta": {
-        "language": "es",
-        "textOnlyContact": true
+        "language": "es"
     },
     "basics": {
         "name": "Aldo Richard Santillán Echevarría",
-        "label": "Software Solutions Architect and Artificial Intelligence Engineer",
+        "label": "Ingeniero de Software Python",
         "image": "https://media.licdn.com/dms/image/v2/D4E03AQGiGqQl6OlrAA/profile-displayphoto-crop_800_800/B4EZmwe8okKgAI-/0/1759602527271?e=1771459200&v=beta&t=dU3Bkc7-WMvyi5_YTKJzXhLxNoonNrAZYmAn3CRlhz0",
         "email": "richard.24.se@gmail.com",
         "phone": "+51 948881161",
         "url": "https://fausto.app",
-        "summary": "Systems Engineer con +10 años de experiencia, especializado en backend de alto rendimiento y arquitectura de IA Generativa / Sistemas Multi-Agente. Enfoque en 'High-Performance Python' para escalar aplicaciones mediante optimización de algoritmos, gestión de memoria y concurrencia (AsyncIO), maximizando eficiencia de infraestructura. Experiencia en llevar soluciones de IA (LangGraph, RAG, LLMs) a producción, aplicando ingeniería de software robusta (SOLID, Clean Architecture, TDD) y prácticas DevOps (CI/CD, Orquestación) para crear sistemas escalables y eficientes.",
+        "summary": "Lead AI Engineer y Arquitecto de Software con +10 años de trayectoria, evolucionando desde la ingeniería de backend de alto rendimiento hacia la arquitectura de IA Generativa y Sistemas Multi-Agente. Mi diferencial radica en un dominio profundo de Python ('High-Performance Python'): escalo aplicaciones mediante la optimización de algoritmos, gestión de memoria y concurrencia (AsyncIO/Coroutines) en lugar de depender de infraestructura costosa. Experto en llevar soluciones de IA (LangGraph, RAG, LLMs) del prototipo a producción, aplicando el rigor de la ingeniería de software clásica (SOLID, Clean Architecture, Design patterns, TDD) y prácticas Devops (CI/CD, Containerización, Orquestación) para crear sistemas inteligentes que son técnicamente robustos, financieramente eficientes y altamente escalables.",
         "location": {
             "city": "Lima",
             "countryCode": "PE",
@@ -21,23 +20,23 @@
             {
                 "network": "LinkedIn",
                 "username": "richardsantillan",
-                "url": "https://www.linkedin.com/in/richard24se/"
+                "url": "https://linkedin.com/in/richardsantillan"
             }
         ]
     },
     "work": [
         {
             "name": "Globant (Cliente: Disney Parks)",
-            "position": "AI Software Engineer / Software Designer",
+            "position": "Lead AI Software Engineer / Architect",
             "startDate": "2024-03-01",
-            "summary": "Liderazgo técnico en 'Yondu', plataforma centralizada de IA Generativa para +15 equipos. Diseño de arquitecturas A2A (Agent-to-Agent), sistemas RAG empresariales y pipelines de ML sobre Azure OpenAI, Vertex AI y Claude. Runtime de inferencia ultra-eficiente con concurrencia masiva non-blocking. Definición de estándares de arquitectura y patrones de diseño adoptados por múltiples squads. Mentoría técnica a desarrolladores junior/mid. Participación en decisiones de arquitectura de la plataforma. Propuesta de mejoras en arquitectura y patrones de diseño. Code reviews de componentes críticos.",
+            "summary": "Liderazgo técnico en 'Yondu', plataforma centralizada de IA Generativa para +15 equipos. Diseño de arquitecturas A2A (Agent-to-Agent), sistemas RAG empresariales y pipelines de ML sobre Azure OpenAI, Vertex AI y Claude. Runtime de inferencia ultra-eficiente con concurrencia masiva non-blocking. Definición de estándares de arquitectura y patrones de diseño adoptados por múltiples squads. Mentoría técnica a desarrolladores junior/mid. Participación en decisiones de arquitectura de la plataforma. Proponer mejoras en arquitectura y patrones de diseño. Code reviews de componentes críticos.",
             "highlights": [
                 "Logré procesar 10K+ requests/segundo manteniendo la infraestructura al mínimo, reescribiendo el núcleo síncrono a una arquitectura 100% Non-Blocking con Python `asyncio` y `uvloop`.",
                 "Diseñé un orquestador de agentes con LangGraph optimizado para reutilizar contextos, reduciendo el consumo de tokens y latencia sin necesidad de servidores adicionales.",
                 "Implementé RAG con algoritmos de búsqueda vectoriales optimizados en código, mejorando la precisión al 92% sin depender de servicios de búsqueda costosos.",
                 "Reduje la huella de memoria de los servicios de inferencia en un 60% mediante profiling profundo (cProfile, memray) y optimización de estructuras de datos.",
                 "Evité costos de escalado vertical (más RAM/CPU) implementando estrategias de gestión de memoria y generadores (lazy evaluation) para procesar payloads masivos de RAG.",
-                "Detecté y resolví anomalías y bugs críticos pre-producción que pasaban desapercibidos."
+                "Detecté y resolví anomalías y bugs críticos pre-producción que pasaban desapercibidos"
             ]
         },
         {
@@ -50,7 +49,7 @@
             "highlights": [
                 "Reduje la latencia de APIs críticas de 1500ms a 120ms puramente a través de optimización de código (algoritmos más eficientes y eliminación de cuellos de botella en I/O).",
                 "Refactoricé servicios monolíticos para usar concurrencia real, permitiendo manejar 40x más tráfico con los mismos recursos de hardware (CPU/RAM).",
-                "Solucioné 'memory leaks' críticos en procesos de larga duración que obligaban a reiniciar servidores diariamente, garantizando estabilidad 24/7 sin aumentar infraestructura.",
+                "Solucioné 'memory leaks' críticos en procesos de larga duración que obligaban a reiniciar servidores diariamente, garantizando estabilidad 24/7 sin aumentar infra.",
                 "Reemplacé procesamiento secuencial por pipelines asíncronos en los ETLs, reduciendo tiempos de ejecución de horas a minutos sin añadir nodos al cluster."
             ]
         },
@@ -62,9 +61,9 @@
             "endDate": "2023-05-01",
             "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicación CPTS y servicio Microfocals. Ejecución de casos de prueba. Mejora del código base. Revisión de PRs del equipo para garantizar calidad del código fuente.",
             "highlights": [
-                "Mejoré el rendimiento del servicio Microfocals reduciendo latencia en 60%.",
-                "Identifiqué y corregí 15 vulnerabilidades de seguridad en el código base.",
-                "Reduje la deuda técnica del proyecto en un 30% mediante refactoring."
+                "Mejoré el rendimiento del servicio Microfocals reduciendo latencia en 60%",
+                "Identifiqué y corregí 15 vulnerabilidades de seguridad en el código base",
+                "Reduje la deuda técnica del proyecto en un 30% mediante refactoring"
             ]
         },
         {
@@ -75,9 +74,9 @@
             "endDate": "2023-01-01",
             "summary": "Diseño de Plataforma ML con el equipo. Soporte en integraciones ML con Python. Creación de templates para DAGs en Airflow. Soporte en problemas de Kubernetes y Azure ML. Resolución de tickets de aplicación CPTS y servicio Microfocals. Revisión de PRs.",
             "highlights": [
-                "Resolví problemas críticos de Kubernetes reduciendo downtime en 80%.",
-                "Implementé pipelines de datos con Apache Beam procesando 500GB diarios.",
-                "Documenté arquitectura ML adoptada como estándar para nuevos proyectos."
+                "Resolví problemas críticos de Kubernetes reduciendo downtime en 80%",
+                "Implementé pipelines de datos con Apache Beam procesando 500GB diarios",
+                "Documenté arquitectura ML adoptada como estándar para nuevos proyectos"
             ]
         },
         {
@@ -88,9 +87,9 @@
             "endDate": "2022-10-01",
             "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicaciones de servicio y binarios. Mejora del rendimiento del proceso ETL. Creación de casos de prueba para cada HU asignada. Revisión de PRs.",
             "highlights": [
-                "Optimicé los procesos core para que sean 30% más rápidos usando threading.",
-                "Migré módulos core de Python 2 a Python 3.",
-                "Reduje consumo de memoria de procesos batch en 50%."
+                "Optimicé los procesos core para que sean 30% más rápidos usando threading",
+                "Migré módulos core de Python2 a Python3",
+                "Reduje consumo de memoria de procesos batch en 50%"
             ]
         },
         {
@@ -102,10 +101,10 @@
             "endDate": "2022-06-01",
             "summary": "Mantenimiento y optimización de sistemas actuales. Resolución de tickets de aplicación monolítica. Creación de casos de prueba para cada HU. Aumento de cobertura de tests a más del 90%. Revisión de PRs.",
             "highlights": [
-                "Aumenté cobertura de tests del 55% al 92% en aplicación Django.",
-                "Resolví 60+ tickets de bugs en aplicación monolítica de alto tráfico.",
-                "Implementé CI/CD con GitLab reduciendo tiempo de deploy de 1 hora a 10 min.",
-                "Documenté 20+ endpoints API para uso del equipo frontend."
+                "Aumenté cobertura de tests del 55% al 92% en aplicación Django",
+                "Resolví 60+ tickets de bugs en aplicación monolítica de alto tráfico",
+                "Implementé CI/CD con GitLab reduciendo tiempo de deploy de 1 hora a 10 min",
+                "Documenté 20+ endpoints API para uso del equipo frontend"
             ]
         },
         {
@@ -116,12 +115,12 @@
             "endDate": "2021-12-01",
             "summary": "Diseño de arquitectura de APIs y Frontends. Definición de tecnologías, patrones de diseño y frameworks para optimizar tiempo/costo/rendimiento. Revisiones y optimizaciones de código para cumplimiento de estándares. Desarrollo de estándares de arquitectura y DevOps. Gestión de framework CI/CD. Documentación de diseños de arquitectura con TOGAF y ArchiMate. Definición de paradigmas de programación (funcional, OOP, reactiva, eventos). Modelos de integración Cloud, Contenedores y Orquestación.",
             "highlights": [
-                "Definí estándares de arquitectura de software adoptados por todos los equipos de desarrollo.",
-                "Implementé framework DevOps y CI/CD que redujo tiempo de deploy en 80%.",
-                "Diseñé arquitectura API REST escalable a 10K+ requests/minuto.",
-                "Documenté arquitecturas empresariales usando TOGAF y ArchiMate.",
-                "Migré sistemas monolíticos a microservicios con Flask y FastAPI.",
-                "Propuse e implementé tecnologías emergentes que optimizaron procesos de negocio."
+                "Definí estándares de arquitectura de software adoptados por todos los equipos de desarrollo",
+                "Implementé framework DevOps y CI/CD que redujo tiempo de deploy en 80%",
+                "Diseñé arquitectura API REST escalable a 10K+ requests/minuto",
+                "Documenté arquitecturas empresariales usando TOGAF y ArchiMate",
+                "Migré sistemas monolíticos a microservicios con Flask y FastAPI",
+                "Propuse e implementé tecnologías emergentes que optimizaron procesos de negocio"
             ]
         },
         {
@@ -131,12 +130,12 @@
             "endDate": "2020-10-01",
             "summary": "Desarrollo de aplicaciones Python/Django/Flask. Frontend con ReactJS (Hooks, Redux). Aplicaciones móviles híbridas con React Native. Desarrollo concurrente y asíncrono con threading, multiprocessing y asyncio. Optimización de aplicaciones para alto rendimiento y disponibilidad. Automatización de despliegues con enfoque DevOps. Dockerización de proyectos. Monitoreo de procesos.",
             "highlights": [
-                "Optimicé procesos que demoraban días a solo minutos utilizando Golang.",
-                "Implementé sistema de monitoreo con Icingav2 bajo enfoque DevOps.",
-                "Desarrollé aplicaciones concurrentes con asyncio mejorando rendimiento 5x.",
-                "Dockericé aplicaciones y establecí pipelines CI/CD cuando era una tecnología emergente.",
-                "Migré 8 bases de datos entre PostgreSQL, MySQL y MongoDB sin downtime.",
-                "Creé sistema de integración con Celery procesando 50K+ tareas diarias."
+                "Optimicé procesos que demoraban días a solo minutos utilizando Golang",
+                "Implementé sistema de monitoreo con Icingav2 bajo enfoque DevOps",
+                "Desarrollé aplicaciones concurrentes con asyncio mejorando rendimiento 5x",
+                "Dockericé aplicaciones y establecí pipelines CI/CD cuando era una tecnología emergente",
+                "Migré 8 bases de datos entre PostgreSQL, MySQL y MongoDB sin downtime",
+                "Creé sistema de integración con Celery procesando 50K+ tareas diarias"
             ]
         },
         {
@@ -147,12 +146,12 @@
             "endDate": "2019-05-01",
             "summary": "Desarrollo de APIs Python para integración con sistemas existentes. Automatización de procesos BU Cloud con Python y Django bajo continuous delivery. Automatización y orquestación con Ansible, Ansible Tower y AWX. Despliegue de pipelines con Jenkins y containerización con Docker. Promoción del framework DevOps. Liderazgo del proyecto Atlas Inventory Cloud para Visanet. Desarrollo de componentes y librerías en Python, Perl, Bash y PowerShell. Desarrollo frontend con ReactJS. Integración de clouds AWS, Azure y GCP.",
             "highlights": [
-                "Lideré proyecto Atlas Inventory Cloud para Visanet entregado en tiempo récord.",
-                "Desarrollé 15 APIs REST integrando sistemas legacy con plataformas modernas.",
-                "Automaticé 30+ procesos de BU Cloud reduciendo tiempo manual en 70%.",
-                "Implementé 20 playbooks Ansible para orquestación de infraestructura.",
-                "Creé pipelines Jenkins para 8 aplicaciones con despliegue automatizado.",
-                "Integré servicios de AWS, Azure y GCP en arquitectura multi-cloud."
+                "Lideré proyecto Atlas Inventory Cloud para Visanet entregado en tiempo récord",
+                "Desarrollé 15 APIs REST integrando sistemas legacy con plataformas modernas",
+                "Automaticé 30+ procesos de BU Cloud reduciendo tiempo manual en 70%",
+                "Implementé 20 playbooks Ansible para orquestación de infraestructura",
+                "Creé pipelines Jenkins para 8 aplicaciones con despliegue automatizado",
+                "Integré servicios de AWS, Azure y GCP en arquitectura multi-cloud"
             ]
         },
         {
@@ -162,12 +161,12 @@
             "endDate": "2019-02-01",
             "summary": "Gestión de infraestructura TIC de la corporación. Liderazgo de proyectos de innovación TI. Administración de servidores Windows Server 2008/2012 y Linux CentOS/SUSE. Administración de servidores AIX (SAP, BW, BO, BI). Administración Office365. Control de plataformas de seguridad TI (Fortinet, Kaspersky, Watchguard). Monitoreo con Icinga y Grafana. Administración System Center. Gestión de redes Cisco y Motorola. Backups con Tivoli IBM. Virtualización Hyper-V y VMware. Administración BD SQL Server, Oracle y PostgreSQL. Desarrollo de reportes con PowerBI. Scripting con Ansible, Python, Perl, C++, PowerShell, Batch y Bash. Desarrollo Django y SPAs con jQuery y Vue.js. Responsable de DataCenter. Investigación de mejoras. Viajes internacionales para despliegues TI.",
             "highlights": [
-                "Gestioné infraestructura TI de corporación multinacional con presencia en 5 países.",
-                "Automaticé 50+ tareas de administración con scripts Python y Ansible.",
-                "Implementé monitoreo con Icinga y Grafana alcanzando 99.9% de uptime.",
-                "Desarrollé 10 aplicaciones web con Django integrando SAP y sistemas legacy.",
-                "Lideré despliegues de infraestructura TI en Colombia, Ecuador y Chile.",
-                "Migré 200+ usuarios a Office365 sin interrupción de servicio."
+                "Gestioné infraestructura TI de corporación multinacional con presencia en 5 países",
+                "Automaticé 50+ tareas de administración con scripts Python y Ansible",
+                "Implementé monitoreo con Icinga y Grafana alcanzando 99.9% de uptime",
+                "Desarrollé 10 aplicaciones web con Django integrando SAP y sistemas legacy",
+                "Lideré despliegues de infraestructura TI en Colombia, Ecuador y Chile",
+                "Migré 200+ usuarios a Office365 sin interrupción de servicio"
             ]
         }
     ],
@@ -311,48 +310,100 @@
     "projects": [
         {
             "name": "Yondu",
-            "description": "Plataforma de IA Generativa que unifica múltiples LLMs mediante API única. 24K+ req/s non-blocking, RAG vectorial y orquestación de agentes.",
-            "keywords": ["FastAPI", "LangGraph", "Azure OpenAI", "LiteLLM"]
+            "description": "Plataforma empresarial de IA Generativa que unifica acceso a múltiples LLMs (Azure OpenAI, Vertex AI, Claude, Nova) mediante API única. Arquitectura non-blocking con 24K+ req/s, sistema RAG con búsqueda vectorial, orquestación de agentes con LangGraph y SDK para consumo interno.",
+            "keywords": [
+                "FastAPI",
+                "MongoDB",
+                "Uvicorn",
+                "Azure OpenAI SDK",
+                "Google GenAI SDK",
+                "LiteLLM",
+                "AWS boto3",
+                "LangGraph"
+            ]
         },
         {
             "name": "Kenobi",
-            "description": "Sistema RAG empresarial para información privada. Integra con Yondu, LangGraph y bases de datos vectoriales.",
-            "keywords": ["RAG", "ChromaDB", "LangGraph", "FastAPI"]
+            "description": "Sistema RAG empresarial para integrar información privada de la empresa con clientes. Conecta con Yondu para acceso a LLMs, utiliza LangGraph para orquestación de agentes y bases de datos vectoriales para devolver información contextual en tiempo real.",
+            "keywords": [
+                "Python",
+                "ChromaDB",
+                "RAG",
+                "LangGraph",
+                "Vector Databases",
+                "FastAPI",
+                "Yondu Integration"
+            ]
         },
         {
             "name": "Fausto",
-            "description": "Sistema IA para resolución automática de incidentes de red. Aprende de analistas y resuelve patrones conocidos.",
-            "keywords": ["Python", "Flask", "TensorFlow", "Vue.js"]
+            "description": "Sistema basado en IA para resolución automática de incidentes de networking y servicios. Aprende de los analistas de red y resuelve inmediatamente cuando reconoce patrones previamente aprendidos.",
+            "keywords": [
+                "Python",
+                "Flask",
+                "Vue.js",
+                "TensorFlow",
+                "Machine Learning",
+                "Network Automation"
+            ]
         },
         {
             "name": "Mercury",
-            "description": "Sincronización de datos SAP a PostgreSQL con Golang goroutines para alto rendimiento.",
-            "keywords": ["Golang", "PostgreSQL", "SAP Integration"]
+            "description": "Sistema de sincronización de datos SAP a PostgreSQL para consumo de otras aplicaciones empresariales. Utiliza Golang con goroutines para procesamiento concurrente de alto rendimiento y Python para transformaciones de datos.",
+            "keywords": [
+                "Golang",
+                "Goroutines",
+                "Python",
+                "PostgreSQL",
+                "SAP Integration"
+            ]
         },
         {
             "pageBreakBefore": true,
             "name": "Engrafi",
-            "description": "Librería async de formularios para FastAPI. CSRF, rate limiting, emails y compliance GDPR.",
+            "description": "Librería async de procesamiento de formularios para FastAPI. Seguridad integrada (CSRF, rate limiting), envío de emails con templates, persistencia opcional (SQLAlchemy/MongoDB), compliance GDPR y Ley 29733.",
             "url": "https://github.com/richard24se/engrafi",
-            "keywords": ["FastAPI", "Async", "Security"]
+            "keywords": [
+                "FastAPI",
+                "Async",
+                "Security",
+                "GDPR Compliance"
+            ]
         },
         {
             "name": "Kivotum",
-            "description": "Gestor de medios self-hosted con FastAPI y Vue.js para organizar archivos multimedia.",
+            "description": "Gestor de medios self-hosted ligero. Interfaz web para subir, ver y organizar archivos multimedia en colecciones. Backend FastAPI asíncrono con frontend Vue.js.",
             "url": "https://github.com/richard24se/kivotum",
-            "keywords": ["FastAPI", "Vue.js", "Media"]
+            "keywords": [
+                "FastAPI",
+                "Vue.js",
+                "Vite",
+                "Media Management"
+            ]
         },
         {
             "name": "Titan",
-            "description": "Plataforma de autenticación FastAPI. JWT, OAuth2, RBAC y audit logging con SQLAlchemy async.",
+            "description": "Plataforma de autenticación y autorización para cualquier aplicacion basada en FastAPI. JWT tokens, OAuth2, RBAC (Role-Based Access Control), audit logging. Alto rendimiento con SQLAlchemy async y Redis.",
             "url": "https://github.com/richard24se/titan",
-            "keywords": ["FastAPI", "JWT", "OAuth2", "RBAC"]
+            "keywords": [
+                "FastAPI",
+                "JWT",
+                "OAuth2",
+                "RBAC",
+                "Redis"
+            ]
         },
         {
             "name": "Sthenos",
-            "description": "Load testing de alto rendimiento en Go con scripting Starlark y métricas detalladas.",
+            "description": "Herramienta de load testing de alto rendimiento escrita en Go. Scripting tipo Python con Starlark, métricas detalladas (DNS, TLS, TTFB), thresholds y stages para simular patrones de tráfico real.",
             "url": "https://github.com/richard24se/sthenos",
-            "keywords": ["Golang", "Load Testing", "Performance"]
+            "keywords": [
+                "Golang",
+                "Goroutines",
+                "Load Testing",
+                "Starlark",
+                "Performance"
+            ]
         }
     ],
     "languages": [
